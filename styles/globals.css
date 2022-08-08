@@ -23,8 +23,20 @@
     }
 
     .contact-input {
-        @apply  px-4 py-1 placeholder:text-xl placeholder:text-slate-500 font-light w-full bg-slate-100 !appearance-none border-b-2
-        transition-all ease-in-out border-slate-500 focus:border-orange-700
+        @apply py-1 px-2 placeholder:text-xl font-light w-full !appearance-none outline-none h-9 border-b-2 border-slate-500
+        focus:border-orange-500 transition-colors ease-in-out serif-pro
+    }
+    .border-gradient {
+        bottom: 0;
+        animation: animateGlow 5s ease infinite;
+        background-size: 200% 200%;
+        background: linear-gradient(to right, #f25c54, #f7b267, #cdb4db, #f25c54);
+        content: '';
+        background-size: 200% 200%;
+        height: 100%;
+        position: absolute;
+        width: 100%;
+        z-index: 1;
     }
     
     .infinite {
@@ -33,6 +45,28 @@
     @keyframes mymove {
         from {top: 0px;}
         to {top: -48px;}
+    }
+
+    .down-chevron {
+        animation: chevron 1.3s infinite;
+    }
+    @keyframes chevron {
+        from {top: 0px;}
+        to {top: 64px;}
+    }
+
+    .bg-cicle {
+        animation: bg 3s infinite;
+    }
+    @keyframes bg {
+        0% { opacity: 0; }
+        100% { opacity: 1;}
+    }
+
+    @keyframes animateGlow {
+        0%  { background-position: 0% 50% }
+        50% { background-position: 100% 50% }
+        100% { background-position: 0% 50% }
     }
 
 }

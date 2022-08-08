@@ -1,18 +1,28 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { themeContext } from '../pages/_app';
 import ProjectItem from './subComponents/ProjectItem'
 
 
 const Projects = () => {
 
+    const context = useContext(themeContext);
+    const dark = context?.dark;
+
+    const bg = dark ? 'bg-slate-600' : 'bg-slate-100';
+    const title = dark ? 'text-slate-200' : 'text-slate-800';
+    const bar = dark ? 'bg-red-400' : 'bg-red-800';
+
   return (
 
-    <div className='w-full bg-slate-100 py-16 lg:pl-64 lg:pr-12'>
+    <div className={`w-full py-16 lg:pl-64 lg:pr-12 ${bg}`}>
 
-        <h2 className='text-5xl mb-1 mx-auto w-fit pb-2 text-[#1D3557]'>PROJECTS</h2>
-        <div className='h-1 w-24 bg-[#1D3557] mb-16 mx-auto'></div>
+        <div className='mb-8'>
+            <h2 className={`text-5xl mb-1 mx-auto w-fit ${title}` }>PROJECTS</h2>
+            <div className={`h-1 w-24 mx-auto ${bar} `}></div>
+        </div>
 
         <div className='grid grid-cols-[repeat(auto-fill,minmax(220px,1fr))] sm:grid-cols-2 sm:mx-4 md:mx-12 lg:mx-auto
-        w-fit lg:grid-cols-3 sm:p-px 2xl:grid-cols-4 3xl:grid-cols-5'>
+        w-fit lg:grid-cols-3 sm:p-px 2xl:grid-cols-4 3xl:grid-cols-5 gap-0.5'>
 
             <ProjectItem
                 bgUrl='13ACNPSwIKBG32GWD7KetzB0ffMIN9GnA'

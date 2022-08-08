@@ -1,20 +1,31 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { themeContext } from '../pages/_app';
 import ResumeItem from './subComponents/ResumeItem'
 
 const Resume = () => {
 
+  const context = useContext(themeContext);
+  const dark = context?.dark;
+
+  const bg = dark ? 'bg-slate-700' : 'bg-white';
+  const title = dark ? 'text-slate-200' : 'text-slate-800';
+  const border = dark ? 'border-slate-200' : 'border-slate-800';
+  const bar = dark ? 'bg-red-400' : 'bg-red-800';
+
 
   return (
 
-    <div className='px-8 lg:pl-64 lg:pr-16 pb-7'>
-        
-        <h2 className='text-5xl mb-1 mx-auto w-fit pb-2 text-[#1D3557]'>RESUME</h2>
-        <div className='h-1 w-24 bg-[#1D3557] mb-16 mx-auto'></div>
+    <div className={`px-8 lg:pl-64 lg:pr-16 py-8 ${title} ${bg}`}>
+
+        <div className='mb-8'>
+          <h2 className={`text-5xl mb-1 mx-auto w-fit ${title}` }>RESUME</h2>
+          <div className={`h-1 w-24 mx-auto ${bar} `}></div>
+        </div>
 
         <div className=''>
 
           <div className='mb-8 pl-4'>
-            <span className='text-3xl border-b-2 border-sky-900'>Education</span>
+            <span className={`text-3xl border-b-2 ${border}`}>Education</span>
           </div>
 
           <ResumeItem
@@ -26,7 +37,7 @@ const Resume = () => {
           />
 
           <div className='my-8 pl-4'>
-            <span className='text-3xl border-b-2 border-sky-900'>Experience</span>
+            <span className={`text-3xl border-b-2 ${border}`}>Experience</span>
           </div>
 
           <ResumeItem

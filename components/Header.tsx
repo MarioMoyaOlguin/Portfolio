@@ -40,7 +40,7 @@ const Header = () => {
     }
 
   return (
-    <div ref={navRef} className='fixed w-full max-w-[1440px] z-10 lg:h-screen lg:w-52'>
+    <div ref={navRef} className='fixed w-full z-10 lg:h-screen lg:w-52'>
 
         <div className="flex lg:flex-col relative h-full items-center justify-between py-1 px-6 text-white bg-white/80 backdrop-blur
         lg:justify-start lg:items-center lg:px-5 lg:py-8 overflow-scroll scrollbar-thin scrollbar-thumb-orange-700 scrollbar-track-red-300
@@ -62,9 +62,9 @@ const Header = () => {
                 <span className='font-script text-3xl text-[rgba(145,13,13,.8)] lg:text-white'>Moya</span>
             </div>
             
-            <p className='uppercase text-lg text-center hidden lg:block'>front end web developer</p>
+            <p className='uppercase text-lg text-center hidden lg:block serif-pro'>front end web developer</p>
 
-            <div className='font-extralight hidden lg:flex flex-col gap-y-3 mt-7'>
+            <div className='font-extralight hidden lg:flex flex-col mt-7'>
                 
                 <NavLinks />
 
@@ -104,7 +104,7 @@ const Header = () => {
         </div>
 
         {/* Floating menu items */}
-        <div className={`flex text-white font-light flex-col absolute top-16 transition ease-in-out text-lg p-2 gap-y-2 items-center right-6 rounded w-52 bg-[rgba(145,13,13,.9)] backdrop-blur-sm shadow-lg `
+        <div className={`flex text-white font-light flex-col absolute top-16 transition ease-in-out text-lg p-2 items-center right-6 rounded w-52 bg-[rgba(145,13,13,.9)] backdrop-blur-sm shadow-lg `
                 + (menuOpened ? "opacity-100 -translate-y-4" : "opacity-0 pointer-events-none") }
         >
             <div className='group flex'>
