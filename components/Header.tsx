@@ -46,6 +46,7 @@ const Header = () => {
         lg:justify-start lg:items-center lg:px-5 lg:py-8 overflow-scroll scrollbar-thin scrollbar-thumb-orange-700 scrollbar-track-red-300
         lg:bg-[rgba(145,13,13,.8)] shadow-md">
 
+            {/* Portrait */}
             <div className='w-full h-32 hidden lg:block'>
                 <div className='relative w-32 h-32 mx-auto'>
                     <Image
@@ -84,7 +85,7 @@ const Header = () => {
             </div>
 
             {/* Menu button */}
-            <div onClick={handleMenu} className='w-7 h-7 relative justify-center lg:hidden group'>
+            <div onClick={handleMenu} className='w-7 h-7 relative justify-center lg:hidden group hover:scale-110'>
                 <div onClick={handleMenu}
                 className={`w-6 h-[2px] absolute top-[5px] left-[2px] bg-[rgba(145,13,13,.8)] transition ease-in-out origin-right rounded-full `
                     + (menuOpened ? "-rotate-45 w-[23px]" : "rotate-0") }
@@ -111,7 +112,7 @@ const Header = () => {
                 <div className='relative'>
                     <span className='opacity-0 group-hover:opacity-100 transition ease-in-out -translate-x-8 absolute group-hover:-translate-x-4'>&lt;</span>
                 </div>
-                <span onClick={handleMenu} >About Me</span>
+                <a onClick={handleMenu} href="#about-me" >About Me</a>
                 <div className='relative'>
                     <span className='opacity-0 group-hover:opacity-100 transition ease-in-out translate-x-8 absolute group-hover:translate-x-2'>/&gt;</span>
                 </div>
@@ -120,7 +121,7 @@ const Header = () => {
                 <div className='relative'>
                     <span className='opacity-0 group-hover:opacity-100 transition ease-in-out -translate-x-8 absolute group-hover:-translate-x-4'>&lt;</span>
                 </div>
-                <span onClick={handleMenu} >Resume</span>
+                <a onClick={handleMenu} href="#resume" >Resume</a>
                 <div className='relative'>
                     <span className='opacity-0 group-hover:opacity-100 transition ease-in-out translate-x-8 absolute group-hover:translate-x-2'>/&gt;</span>
                 </div>
@@ -129,7 +130,7 @@ const Header = () => {
                 <div className='relative'>
                     <span className='opacity-0 group-hover:opacity-100 transition ease-in-out -translate-x-8 absolute group-hover:-translate-x-4'>&lt;</span>
                 </div>
-                <span onClick={handleMenu} >Projects</span>
+                <a onClick={handleMenu} href="#projects" >Projects</a>
                 <div className='relative'>
                     <span className='opacity-0 group-hover:opacity-100 transition ease-in-out translate-x-8 absolute group-hover:translate-x-2'>/&gt;</span>
                 </div>
@@ -138,7 +139,7 @@ const Header = () => {
                 <div className='relative'>
                     <span className='opacity-0 group-hover:opacity-100 transition ease-in-out -translate-x-8 absolute group-hover:-translate-x-4'>&lt;</span>
                 </div>
-                <span onClick={handleMenu} >Contact</span>
+                <a onClick={handleMenu} href="#contact" >Contact</a>
                 <div className='relative'>
                     <span className='opacity-0 group-hover:opacity-100 transition ease-in-out translate-x-8 absolute group-hover:translate-x-2'>/&gt;</span>
                 </div>

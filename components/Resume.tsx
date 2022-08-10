@@ -15,26 +15,28 @@ const Resume = () => {
 
   return (
 
-    <div className={`px-8 lg:pl-64 lg:pr-16 py-8 ${title} ${bg}`}>
+    <div id='resume' className={`px-8 lg:pl-64 lg:pr-16 pb-8 pt-20 ${title} ${bg}`}>
 
         <div className='mb-8'>
-          <h2 className={`text-5xl mb-1 mx-auto w-fit ${title}` }>RESUME</h2>
-          <div className={`h-1 w-24 mx-auto ${bar} `}></div>
+          <h2 className={`fade sec-animation -translate-y-4 opacity-0 text-5xl mb-1  mx-auto w-fit ${title}` }>RESUME</h2>
+          <div className={`bar sec-animation h-1 w-0 mx-auto ${bar} `}></div>
         </div>
 
         <div className=''>
 
-          <div className='mb-8 pl-4'>
-            <span className={`text-3xl border-b-2 ${border}`}>Education</span>
-          </div>
+          <div className=''>
+            <div className='mb-8 pl-4'>
+              <span className={`text-3xl border-b-2 ${border}`}>Education</span>
+            </div>
 
-          <ResumeItem
-            year="2021"
-            college="Tangamanga University"
-            degree="Computer Networks Bachelor's Degree"
-            collegeDetails='Tangamanga University, Axtla de Terrazas, S.L.P. Mexico'
-            link="https://www.utan.edu.mx/campus/huasteca"
-          />
+            <ResumeItem
+              year="2021"
+              college="Tangamanga University"
+              degree="Computer Networks Bachelor's Degree"
+              collegeDetails='Tangamanga University, Axtla de Terrazas, S.L.P. Mexico'
+              link="https://www.utan.edu.mx/campus/huasteca"
+            />
+          </div>
 
           <div className='my-8 pl-4'>
             <span className={`text-3xl border-b-2 ${border}`}>Experience</span>

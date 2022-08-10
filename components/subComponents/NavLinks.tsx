@@ -9,7 +9,7 @@ const NavLinks = () => {
             <div className='relative'>
                 <span className='opacity-0 group-hover:opacity-100 transition ease-in-out -translate-x-8 absolute group-hover:-translate-x-4'>&lt;</span>
             </div>
-            <span>About Me</span>
+            <a className='links' href="#about-me">About Me</a>
             <div className='relative'>
                 <span className='opacity-0 group-hover:opacity-100 transition ease-in-out translate-x-8 absolute group-hover:translate-x-2'>/&gt;</span>
             </div>
@@ -18,7 +18,7 @@ const NavLinks = () => {
             <div className='relative'>
                 <span className='opacity-0 group-hover:opacity-100 transition ease-in-out -translate-x-8 absolute group-hover:-translate-x-4'>&lt;</span>
             </div>
-            <span>Resume</span>
+            <a className='links' href='#resume'>Resume</a>
             <div className='relative'>
                 <span className='opacity-0 group-hover:opacity-100 transition ease-in-out translate-x-8 absolute group-hover:translate-x-2'>/&gt;</span>
             </div>
@@ -27,7 +27,7 @@ const NavLinks = () => {
             <div className='relative'>
                 <span className='opacity-0 group-hover:opacity-100 transition ease-in-out -translate-x-8 absolute group-hover:-translate-x-4'>&lt;</span>
             </div>
-            <span>Projects</span>
+            <a className='links' href='#projects'>Projects</a>
             <div className='relative'>
                 <span className='opacity-0 group-hover:opacity-100 transition ease-in-out translate-x-8 absolute group-hover:translate-x-2'>/&gt;</span>
             </div>
@@ -36,7 +36,7 @@ const NavLinks = () => {
             <div className='relative'>
                 <span className='opacity-0 group-hover:opacity-100 transition ease-in-out -translate-x-8 absolute group-hover:-translate-x-4'>&lt;</span>
             </div>
-            <span>Contact</span>
+            <a className='links' href='#contact'>Contact</a>
             <div className='relative'>
                 <span className='opacity-0 group-hover:opacity-100 transition ease-in-out translate-x-8 absolute group-hover:translate-x-2'>/&gt;</span>
             </div>
