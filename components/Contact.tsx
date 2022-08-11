@@ -1,4 +1,6 @@
-import React, { useContext } from 'react'
+import React, { useContext, useRef } from 'react'
+import emailjs from '@emailjs/browser';
+
 import { themeContext } from '../pages/_app';
 
 
@@ -13,34 +15,30 @@ const Contact = () => {
   const input = dark ? 'bg-slate-600 focus:bg-slate-700 text-slate-300' : 'bg-slate-100 focus:bg-white';
   const footer = dark ? 'bg-slate-900' : 'bg-slate-500';
 
-  const handleSubmit = (e:any) => {
-    e.preventDefault();
-  }
-
 
   return (
 
-    <div className={`w-full pt-16 ${bg}`} id="contact">
+    <div className={`w-full pt-24 box bottom-container lg:bottom-container-lg ${bg}`} id="contact">
         <div className='flex flex-col lg:pl-52 pb-8'>
           <div>
             <h2 className={`fade sec-animation -translate-y-4 opacity-0 text-5xl mb-1 mx-auto w-fit ${title}` }>CONTACT</h2>
-            <div className={`bar sec-animation sec-animation h-1 w-0 mx-auto ${bar} `}></div>
+            <div className={`bar sec-animation sec-animation h-1 w-0 mx-auto ${bar} mx-12 `}></div>
           </div>
 
           <p className='text-center text-sky-600 text-2xl font-medium py-8'>Have a question or message?</p>
 
           {/* Inputs */}
-          <form onSubmit={handleSubmit} className='flex fade translate-y-6 opacity-0 sec-animation flex-col w-full max-w-3xl mx-auto px-2 sm:px-6'>
+          <form action="https://formsubmit.co/mariomoyaolguin@gmail.com" method="POST" className='flex fade translate-y-6 opacity-0 sec-animation flex-col w-full max-w-3xl mx-auto px-2 sm:px-6'>
 
-            <input type="text" placeholder='Name' className={`contact-input ${input}`} required/>
+            <input type="text" name="name" placeholder='Name' className={`contact-input ${input}`} required/>
           
-            <input type="email" placeholder='Email' className={`contact-input my-4 ${input}`} required/>
+            <input type="email" name="email" placeholder='Email' className={`contact-input my-4 ${input}`} required/>
 
-            <textarea name="" id="" cols={40} rows={5} placeholder="Leave a message..."
+            <textarea name="message" id="" cols={40} rows={5} placeholder="Leave a message..."
               className={`contact-input h-32 ${input}`} required >
             </textarea>
             
-            <button type="submit" className='w-full bg-slate-700 text-white py-2 px-4 hover:bg-sky-700 transition-all ease-in-out mt-3'>
+            <button type="submit" value="send" className='w-full bg-slate-700 text-white py-2 px-4 hover:bg-sky-700 transition-all ease-in-out mt-3'>
               <span>SUBMIT</span>
             </button>
           </form>

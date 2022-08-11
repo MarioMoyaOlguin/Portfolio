@@ -10,7 +10,7 @@ export const themeContext = createContext<ThemeContext | null>(null);
 
 function MyApp({ Component, pageProps }: AppProps) {
 
-  const [dark, setDark] = useState(false)
+  const [dark, setDark] = useState(true)
 
   const handleDark = () => {
     setDark(!dark);

@@ -12,13 +12,15 @@ const Projects = () => {
     const title = dark ? 'text-slate-200' : 'text-slate-800';
     const bar = dark ? 'bg-red-400' : 'bg-red-800';
 
+
+
   return (
 
-    <div id='projects' className={`w-full py-16 lg:pl-64 lg:pr-12 ${bg}`}>
+    <div id='projects' className={`w-full sm:px-2 pt-16 pb-24 lg:pl-64 box top-container lg:top-container-lg ${bg}`}>
 
         <div className='mb-8'>
             <h2 className={`fade sec-animation -translate-y-4 opacity-0 text-5xl mb-1 mx-auto w-fit ${title}` }>PROJECTS</h2>
-            <div className={`bar sec-animation h-1 w-0 mx-auto ${bar} `}></div>
+            <div className={`bar sec-animation h-1 mx-8 ${bar} `}></div>
         </div>
 
         <div className='projects grid grid-cols-[repeat(auto-fill,minmax(220px,1fr))] sm:grid-cols-2 sm:mx-4 md:mx-12 lg:mx-auto

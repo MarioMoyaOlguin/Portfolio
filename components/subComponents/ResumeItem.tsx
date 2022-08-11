@@ -40,7 +40,7 @@ const ResumeItem = ( {year, college, degree, collegeDetails, link, details, proj
               </div>
             }
             <p>{details} <span>
-              <a href="" target="_blank" className='text-cyan-600 font-medium text-[1rem]' >{projects}</a></span>
+              <a href="#projects" className='text-cyan-600 font-medium text-[1rem]' >{projects}</a></span>
             </p>
             <ul className='mt-2'>
               {li && <li className='list-disc ml-5'>{li}</li>}

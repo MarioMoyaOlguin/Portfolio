@@ -9,9 +9,6 @@ const Header = () => {
     
     const navRef = useRef<HTMLDivElement>(null);
     
-    const getDivWidth = () => navRef.current?.clientWidth;
-    
-    const [windowSize, setWindowSize] = useState(getDivWidth());
 
     const context = useContext(themeContext);
     const handleTheme = context?.handleDark;
@@ -21,7 +18,6 @@ const Header = () => {
 
         const handleWindowResize = () => {
             setMenuOpened(false);
-            setWindowSize(getDivWidth());
         }
     
         window.addEventListener('resize', handleWindowResize);
