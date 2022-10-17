@@ -2,6 +2,6 @@
 module.exports = {
   reactStrictMode: true,
   images: {
-    domains: ['drive.google.com' , 'images.unsplash.com'],
+    domains: ['drive.google.com' , 'images.unsplash.com', 'cdn.pixabay.com'],
   },
 }

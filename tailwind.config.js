@@ -5,7 +5,48 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        'moving-bg': 'background 10s ease-in-out infinite alternate',
+        'bg-slide': 'slide 12s ease-in-out infinite alternate',
+        'bg-slide-rev': 'slideRev 12s ease-in-out infinite alternate',
+        'slide-chevron': 'slideChevron 1s ease-in-out infinite ',
+        'slide-up-chevron': 'slideUpChevron 1s linear infinite ',
+        'slide-text': 'slideText 0.5s linear',
+        'slide-text-delayd': 'slideTextDelayd 2s linear',
+      },
+      keyframes: {
+        background: {
+          '0%': { 'background-position': '0% 50%' },
+          '100%': { 'background-position': '100% 50%' },
+        },
+        slide: {
+          '0%': { 'transform': 'translateX(-25%)' },
+          '100%': { 'transform': 'translateX(0%)' }
+        },
+        slideRev: {
+          '0%': { 'transform': 'translateX(25%)' },
+          '100%': { 'transform': 'translateX(-25%)' }
+        },
+        slideChevron: {
+          '0%': { 'transform': '' },
+          '100%': { 'transform': 'translateY(0px)' }
+        },
+        slideUpChevron: {
+          '0%': { 'transform': '' },
+          '100%': { 'transform': 'translateY(-50%)' }
+        },
+        slideText: {
+          '0%': { 'opacity': '0', 'transform': 'translateY(-16px)' },
+          '100%': { 'opacity': '1', 'transform': 'translateY(0px)' }
+        },
+        slideTextDelayd: {
+          '0%': { 'opacity': '0', 'transform': 'translateY(-16px)' },
+          '75%': { 'opacity': '0', 'transform': 'translateY(-16px)' },
+          '100%': { 'opacity': '1', 'transform': 'translateY(0px)' }
+        },
+      },
+    },
     screens: {
       'sm': '640px', // => @media (min-width: 640px)
       'md': '768px', // => @media (min-width: 768px)

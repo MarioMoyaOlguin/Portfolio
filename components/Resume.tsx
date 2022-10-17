@@ -2,31 +2,34 @@ import React, { useContext } from 'react'
 import { themeContext } from '../pages/_app';
 import ResumeItem from './subComponents/ResumeItem'
 
+
 const Resume = () => {
 
   const context = useContext(themeContext);
   const dark = context?.dark;
 
-  const bg = dark ? 'bg-slate-700' : 'bg-white';
-  const title = dark ? 'text-slate-200' : 'text-slate-800';
-  const border = dark ? 'border-slate-200' : 'border-slate-800';
-  const bar = dark ? 'bg-red-400' : 'bg-red-800';
+  const bg = dark ? 'bg-slate-900/70' : 'bg-white/70';
+  const title = dark ? 'text-slate-200' : 'text-slate-900';
+  const border = dark ? 'border-orange-500' : 'border-red-800';
+  const bar = dark ? 'bg-orange-500' : 'bg-red-800';
 
 
   return (
 
-    <div id='resume' className={`px-8 lg:pl-64 lg:pr-16 pb-8 pt-20 ${title} ${bg}`}>
+    <div id='resume' className={`px-8 lg:pl-64 lg:pr-16 pb-8 pt-20 z-10 ${title} ${bg} backdrop-blur-xl w-full`}>
 
-        <div className='mb-8'>
-          <h2 className={`fade sec-animation -translate-y-4 opacity-0 text-5xl mb-1  mx-auto w-fit ${title}` }>RESUME</h2>
-          <div className={`bar sec-animation h-1 w-0 mx-auto ${bar} `}></div>
+        <div className='mb-8 w-full'>
+          <h2 className={`fade sec-animation -translate-y-4 opacity-0 text-5xl mb-1  mx-auto w-fit serif-pro ${title} text-shadow-sm` }>
+            RESUME
+          </h2>
+          <div className={`bar transition-all duration-700 h-1 w-0 mx-auto rounded-full ${bar} `}></div>
         </div>
 
         <div className=''>
 
           <div className=''>
             <div className='mb-8 pl-4'>
-              <span className={`text-3xl border-b-2 ${border}`}>Education</span>
+              <span className={`text-3xl border-b-2 ${border} text-shadow-sm`}>Education</span>
             </div>
 
             <ResumeItem
@@ -39,7 +42,7 @@ const Resume = () => {
           </div>
 
           <div className='my-8 pl-4'>
-            <span className={`text-3xl border-b-2 ${border}`}>Experience</span>
+            <span className={`text-3xl border-b-2 ${border} text-shadow-sm`}>Experience</span>
           </div>
 
           <ResumeItem

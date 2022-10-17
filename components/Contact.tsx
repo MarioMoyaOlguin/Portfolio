@@ -9,26 +9,34 @@ const Contact = () => {
   const context = useContext(themeContext);
   const dark = context?.dark;
 
-  const bg = dark ? 'bg-slate-800' : 'bg-slate-300';
+  const bg = dark ? 'bg-slate-900/70' : 'bg-slate-400/70';
   const title = dark ? 'text-slate-200' : 'text-slate-800';
-  const bar = dark ? 'bg-red-400' : 'bg-red-800';
-  const input = dark ? 'bg-slate-600 focus:bg-slate-700 text-slate-300' : 'bg-slate-100 focus:bg-white';
-  const footer = dark ? 'bg-slate-900' : 'bg-slate-500';
+  const bar = dark ? 'bg-orange-500' : 'bg-red-800';
+  const input = dark ? 'bg-slate-600 focus:bg-slate-500 text-white ' : 'bg-gray-200 focus:bg-white text-black placeholder-slate-800';
+  const footer = dark ? 'bg-slate-900/70' : 'bg-slate-500/90';
+  const question = dark ? 'text-sky-400' : 'text-blue-800'
+
+  const handleScrollTop = () => {
+    const top = document.getElementById('about-me');
+    top?.scrollIntoView();
+  }
 
 
   return (
 
-    <div className={`w-full pt-24 box bottom-container lg:bottom-container-lg ${bg}`} id="contact">
+    <div className={`w-full pt-24 box bottom-container lg:bottom-container-lg backdrop-blur-xl ${bg} `} id="contact">
         <div className='flex flex-col lg:pl-52 pb-8'>
           <div>
-            <h2 className={`fade sec-animation -translate-y-4 opacity-0 text-5xl mb-1 mx-auto w-fit ${title}` }>CONTACT</h2>
-            <div className={`bar sec-animation sec-animation h-1 w-0 mx-auto ${bar} mx-12 `}></div>
+            <h2 className={`fade sec-animation -translate-y-4 opacity-0 text-5xl mb-1 mx-auto w-fit serif-pro ${title}
+            text-shadow-sm` }>CONTACT</h2>
+            <div className={`bar transition-all duration-700 h-1 w-0 mx-auto rounded-full ${bar} `}></div>
           </div>
 
-          <p className='text-center text-sky-600 text-2xl font-medium py-8'>Have a question or message?</p>
+          <p className={`text-center text-2xl font-medium py-8 ${question} `}>Have a question or message?</p>
 
           {/* Inputs */}
-          <form action="https://formsubmit.co/mariomoyaolguin@gmail.com" method="POST" className='flex fade translate-y-6 opacity-0 sec-animation flex-col w-full max-w-3xl mx-auto px-2 sm:px-6'>
+          <form action="https://formsubmit.co/mariomoyaolguin@gmail.com" method="POST"
+          className='flex fade translate-y-6 opacity-0 flex-col w-full max-w-3xl mx-auto px-2 sm:px-6 transition-all duration-700'>
 
             <input type="text" name="name" placeholder='Name' className={`contact-input ${input}`} required/>
           
@@ -44,9 +52,9 @@ const Contact = () => {
           </form>
 
           {/* go top */}
-          <a className='w-12 h-12 mt-8 mx-auto overflow-hidden relative bg-slate-600 hover:bg-sky-700 transition-colors ease-in-out'
-          href='#about-me'>
-            <div className='w-12 absolute hover:infinite transition-transform ease-linear'>
+          <div className='w-12 h-12 mt-8 mx-auto overflow-hidden relative bg-slate-600 hover:bg-sky-700 transition-colors ease-in-out'
+          onClick={handleScrollTop}>
+            <div className='w-12 absolute hover:animate-slide-up-chevron transition-all ease-linear'>
               <div className='w-12 h-12 flex justify-center items-center'>
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 stroke-slate-300 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M5 11l7-7 7 7M5 19l7-7 7 7" />
@@ -58,7 +66,7 @@ const Contact = () => {
                 </svg>
               </div>
             </div>
-          </a>
+          </div>
         </div>
 
         {/* Contact icons */}

@@ -17,8 +17,8 @@ const ProjectItem = ( {bgUrl, appName, tecs, description, webPage, gitUrl}:Proje
     const context = useContext(themeContext);
     const dark = context?.dark;
 
-    const bg = dark ? 'bg-sky-400/70' : 'bg-sky-900/70';
-    const tecsText = dark ? 'text-orange-400' : 'text-sky-300';
+    const bg = dark ? 'bg-orange-500/70' : 'bg-sky-900/70';
+    const tecsText = dark ? 'text-sky-300' : 'text-sky-300';
 
   return (
 

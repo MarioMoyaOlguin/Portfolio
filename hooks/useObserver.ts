@@ -56,23 +56,39 @@ export const fadeObserver = () => {
 
 export const barObserver = () => {
     //animate title bar
-
+    
     if (typeof window !== 'undefined') {
-        const bars = document.querySelectorAll(".bar");
-        console.log(bars)
+
+        const bars = document.getElementsByClassName("bar") as HTMLCollection;
+    
+        const config = {
+            rootMargin: '-50px 0px -50px 0px',
+            threshold: 1
+        };
 
         const barObserver = new IntersectionObserver( entries => {
+
+            // bars.forEach( bar => {
+            //     bar.style.width = '0px'
+            // })
+            
             entries.forEach( entry => {
+                
+                // @ts-ignore: Unreachable code error
+                entry.target.style.width = '0px';
+
                 if(entry.isIntersecting) {
-                    entry.target.classList.replace("w-0", "w-24");
-                    barObserver.unobserve(entry.target);
+                    // @ts-ignore: Unreachable code error
+                    entry.target.style.width = '100px';
+
+                    // barObserver.unobserve(entry.target);
                 }
             })
-        }, {threshold: 1} );
+        }, config );
 
-        bars.forEach( bar => {
-            barObserver.observe(bar);
-        })
+        for (let index = 0; index < bars.length; index++) {
+            barObserver.observe(bars[index]);
+        }
     }
 }
 

@@ -29,11 +29,6 @@
         @apply py-1 px-2 placeholder:text-xl font-light w-full !appearance-none outline-none h-9 border-b-2 border-slate-500
         focus:border-orange-500 transition-colors ease-in-out serif-pro
     }
-    .sec-animation {
-        transition-property: transform, opacity;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        transition-duration: 700ms;
-    }
 
     .box {
         --a: 50px; /* the size of the triangle */
@@ -56,47 +51,13 @@
 
     /* Animations */
 
-
-    .infinite {
-        animation: mymove 1.3s infinite;
+    .bg-1 {
+        background-image: conic-gradient( #5ddcff, #3c67e3, #FF7B4B, #4e00c2, #5ddcff, #3c67e3, #FF7B4B, #5ddcff );
     }
-    @keyframes mymove {
-        from {top: 0px;}
-        to {top: -48px;}
+    .bg-dark {
+        background: linear-gradient(-60deg, #8f152e, #7f54a2, #44acee, #6268c7, #db6dff, #2e2c6b, #db6dff, #8f152e);
     }
-
-    .down-chevron {
-        animation: chevron 1.3s infinite;
-    }
-    @keyframes chevron {
-        from {top: 0px;}
-        to {top: 64px;}
-    }
-
-    .bg-cicle {
-        animation: bg 3s infinite;
-    }
-    @keyframes bg {
-        0% { opacity: 0; }
-        100% { opacity: 1;}
-    }
-
-    .border-gradient {
-        bottom: 0;
-        animation: animateGlow 5s ease infinite;
+    .bg-scale {
         background-size: 200% 200%;
-        background: linear-gradient(to right, #f25c54, #f7b267, #cdb4db, #f25c54);
-        content: '';
-        background-size: 200% 200%;
-        height: 100%;
-        position: absolute;
-        width: 100%;
-        z-index: 1;
     }
-    @keyframes animateGlow {
-        0%  { background-position: 0% 50% }
-        50% { background-position: 100% 50% }
-        100% { background-position: 0% 50% }
-    }
-
 }
