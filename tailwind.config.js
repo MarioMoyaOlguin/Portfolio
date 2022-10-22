@@ -8,7 +8,7 @@ module.exports = {
     extend: {
       animation: {
         'moving-bg': 'background 10s ease-in-out infinite alternate',
-        'bg-slide': 'slide 12s ease-in-out infinite alternate',
+        'bg-slide': 'slide 8s ease-in-out infinite alternate',
         'bg-slide-rev': 'slideRev 12s ease-in-out infinite alternate',
         'slide-chevron': 'slideChevron 1s ease-in-out infinite ',
         'slide-up-chevron': 'slideUpChevron 1s linear infinite ',
@@ -22,7 +22,7 @@ module.exports = {
         },
         slide: {
           '0%': { 'transform': 'translateX(-25%)' },
-          '100%': { 'transform': 'translateX(0%)' }
+          '100%': { 'transform': 'translateX(25%)' }
         },
         slideRev: {
           '0%': { 'transform': 'translateX(25%)' },

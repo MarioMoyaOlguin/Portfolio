@@ -58,6 +58,6 @@
         background: linear-gradient(-60deg, #8f152e, #7f54a2, #44acee, #6268c7, #db6dff, #2e2c6b, #db6dff, #8f152e);
     }
     .bg-scale {
-        background-size: 200% 200%;
+        background-size: 200% 100%;
     }
 }

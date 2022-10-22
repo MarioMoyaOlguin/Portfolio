@@ -60,7 +60,7 @@ const Header = () => {
   <div className=''>
 
     {/* theme icon */}
-    <div className='fixed top-2 right-2 z-20 shadow-md shadow-black/30 w-12 h-12 overflow-hidden rounded-full transition-all
+    <div className='fixed lg:top-2 right-2 bottom-2 z-20 shadow-md shadow-black/60 w-12 h-12 overflow-hidden rounded-full transition-all
     hover:scale-105'>
 
         <div className={`flex w-fit ${position} transition-all`}>

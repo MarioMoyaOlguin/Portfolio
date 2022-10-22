@@ -8,6 +8,7 @@ import Resume from '../components/Resume'
 import Projects from '../components/Projects'
 import Contact from '../components/Contact'
 import projectsObserver, { barObserver, fadeObserver } from "../hooks/useObserver";
+import Image from 'next/image'
 
 
 const Home: NextPage = () => {
@@ -32,12 +33,17 @@ const Home: NextPage = () => {
           
       <main className="w-full relative overflow-hidden spartan antialiased mx-auto max-w-[1920px] bg-slate-900">
 
-        <div className='w-full h-full'>
-          <video autoPlay loop muted height="360" width='640'  poster='https://drive.google.com/uc?id=1ff4CUftSxCoEetzx-I-RMXJ0O-kBpQBe'
+        <div className='w-full h-screen fixed'>
+          {/* <video autoPlay loop muted height="360" width='640'  poster='https://drive.google.com/uc?id=1ff4CUftSxCoEetzx-I-RMXJ0O-kBpQBe'
           className='fixed h-full w-full object-cover max-w-[1920px] '>
               <source src="https://drive.google.com/uc?id=1JbqMmevdIDIi0PGOuI5ebIPwbsSQ5ZR9" type="video/mp4" />
-
-          </video>
+          </video> */}
+            <Image
+              src="https://drive.google.com/uc?id=1GRfzaWVQuO9Rbm_otAOs0fVrVluXnSzS"
+              layout="fill"
+              objectFit='cover'
+              className='-z-10'
+            />
         </div>
 
         <Header />

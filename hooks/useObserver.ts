@@ -62,7 +62,7 @@ export const barObserver = () => {
         const bars = document.getElementsByClassName("bar") as HTMLCollection;
     
         const config = {
-            rootMargin: '-50px 0px -50px 0px',
+            rootMargin: '-40px 0px -50px 0px',
             threshold: 1
         };
 

@@ -9,12 +9,12 @@ const Contact = () => {
   const context = useContext(themeContext);
   const dark = context?.dark;
 
-  const bg = dark ? 'bg-slate-900/70' : 'bg-slate-400/70';
+  const bg = dark ? 'bg-slate-900/90' : 'bg-slate-300/90';
   const title = dark ? 'text-slate-200' : 'text-slate-800';
   const bar = dark ? 'bg-orange-500' : 'bg-red-800';
   const input = dark ? 'bg-slate-600 focus:bg-slate-500 text-white ' : 'bg-gray-200 focus:bg-white text-black placeholder-slate-800';
-  const footer = dark ? 'bg-slate-900/70' : 'bg-slate-500/90';
-  const question = dark ? 'text-sky-400' : 'text-blue-800'
+  const footer = dark ? 'bg-slate-900' : 'bg-slate-500';
+  const question = dark ? 'text-sky-400' : 'text-blue-800';
 
   const handleScrollTop = () => {
     const top = document.getElementById('about-me');

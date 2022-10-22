@@ -8,7 +8,7 @@ const Resume = () => {
   const context = useContext(themeContext);
   const dark = context?.dark;
 
-  const bg = dark ? 'bg-slate-900/70' : 'bg-white/70';
+  const bg = dark ? 'bg-slate-900/90' : 'bg-white/90';
   const title = dark ? 'text-slate-200' : 'text-slate-900';
   const border = dark ? 'border-orange-500' : 'border-red-800';
   const bar = dark ? 'bg-orange-500' : 'bg-red-800';
@@ -16,7 +16,7 @@ const Resume = () => {
 
   return (
 
-    <div id='resume' className={`px-8 lg:pl-64 lg:pr-16 pb-8 pt-20 z-10 ${title} ${bg} backdrop-blur-xl w-full`}>
+    <div id='resume' className={`px-8 lg:pl-64 lg:pr-16 pb-28 pt-20 z-10 ${title} ${bg} backdrop-blur-xl w-full`}>
 
         <div className='mb-8 w-full'>
           <h2 className={`fade sec-animation -translate-y-4 opacity-0 text-5xl mb-1  mx-auto w-fit serif-pro ${title} text-shadow-sm` }>
@@ -28,7 +28,7 @@ const Resume = () => {
         <div className=''>
 
           <div className=''>
-            <div className='mb-8 pl-4'>
+            <div className='mb-8 sm:pl-4'>
               <span className={`text-3xl border-b-2 ${border} text-shadow-sm`}>Education</span>
             </div>
 
@@ -38,10 +38,12 @@ const Resume = () => {
               degree="Computer Networks Bachelor's Degree"
               collegeDetails='Tangamanga University, Axtla de Terrazas, S.L.P. Mexico'
               link="https://www.utan.edu.mx/campus/huasteca"
+              docTitle='Degree'
+              docTitle2='Grades '
             />
           </div>
 
-          <div className='my-8 pl-4'>
+          <div className='my-8 sm:pl-4'>
             <span className={`text-3xl border-b-2 ${border} text-shadow-sm`}>Experience</span>
           </div>
 

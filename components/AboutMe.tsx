@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import React, { useContext, useEffect, useRef, useState } from 'react'
-import { fadeObserver } from '../hooks/useObserver';
 import { themeContext } from '../pages/_app';
 
 const AboutMe = () => {
