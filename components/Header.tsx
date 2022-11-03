@@ -88,7 +88,7 @@ const Header = () => {
             <div className=' sm:h-32 hidden lg:block'>
                 <div className='relative sm:w-32 sm:h-32 mx-auto'>
                     <Image
-                        src={"https://drive.google.com/uc?id=102ARiQ6PWCPGjsp1NWg_aLLLoycxaZeg"}
+                        src={"/profile.jpg"}
                         layout="fill"
                         objectFit='cover'
                         className='rounded-full'

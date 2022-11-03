@@ -60,7 +60,7 @@ const AboutMe = () => {
               {/* portrait */}
               <div className='relative mx-auto mb-5 lg:hidden'>
                 <Image
-                  src={"https://drive.google.com/uc?id=102ARiQ6PWCPGjsp1NWg_aLLLoycxaZeg"}
+                  src={"/profile.jpg"}
                   width={150}
                   height={150}
                   className='rounded-full transition ease-in-out shadow'

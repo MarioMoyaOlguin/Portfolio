@@ -39,7 +39,7 @@ const Home: NextPage = () => {
               <source src="https://drive.google.com/uc?id=1JbqMmevdIDIi0PGOuI5ebIPwbsSQ5ZR9" type="video/mp4" />
           </video> */}
             <Image
-              src="https://drive.google.com/uc?id=1GRfzaWVQuO9Rbm_otAOs0fVrVluXnSzS"
+              src="/bg.webp"
               layout="fill"
               objectFit='cover'
               className='-z-10'

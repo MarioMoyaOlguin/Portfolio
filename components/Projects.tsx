@@ -29,7 +29,7 @@ const Projects = () => {
 
                 <div className='translate-y-6 opacity-0 transition-all'>
                     <ProjectItem
-                        bgUrl='13ACNPSwIKBG32GWD7KetzB0ffMIN9GnA'
+                        bgUrl='/weatherappss.png'
                         appName="Forecast"
                         tecs="React JS / Tailwindcss"
                         description="Simple forecast app, my first experience requesting API data"
@@ -41,7 +41,7 @@ const Projects = () => {
 
                 <div className='translate-y-6 opacity-0 transition-all'>
                     <ProjectItem
-                        bgUrl='1KGfKeBRF400Yrge_p_qzhBJFw0KSvp8s'
+                        bgUrl='/salem-theme.png'
                         appName="Web Theme"
                         tecs="Next JS / Tailwindcss"
                         description='Fully responsive Web Theme with several functionalities, inspired by a WordPress theme'
@@ -52,7 +52,7 @@ const Projects = () => {
 
                 <div className='translate-y-6 opacity-0 transition-all'>
                     <ProjectItem
-                        bgUrl='1xcO-rdb493G4bn-wQ9lcNvOlBlR4rIUd'
+                        bgUrl='/movies-app.png'
                         appName="Movie App"
                         tecs="Next JS / Tailwindcss / Firebase"
                         description='Movie Web Application with a design similar to Netflix, fetches data from The Movie Data Base'
@@ -63,7 +63,7 @@ const Projects = () => {
 
                 <div className='translate-y-6 opacity-0 transition-all'>
                     <ProjectItem
-                        bgUrl='11TCmhOO3qx4rL4RpFkZ3gt9PAzPpZeYF'
+                        bgUrl='/portfolio.png'
                         appName="Certification Portfolio"
                         tecs="HTML / CSS"
                         description='Portfolio designed as part of FreeCodeCamp HTML / CSS certification'

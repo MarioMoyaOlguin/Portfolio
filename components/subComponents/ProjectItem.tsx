@@ -24,7 +24,7 @@ const ProjectItem = ( {bgUrl, appName, tecs, description, webPage, gitUrl}:Proje
 
     <div className='relative group w-full h-72 justify-center items-center text-white text-center'>
         <Image
-            src={`https://drive.google.com/uc?id=${bgUrl}`}
+            src={bgUrl}
             layout="fill"
             objectFit='cover'
             className='-z-0'

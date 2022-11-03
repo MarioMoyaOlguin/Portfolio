@@ -39,7 +39,6 @@ const Resume = () => {
               collegeDetails='Tangamanga University, Axtla de Terrazas, S.L.P. Mexico'
               link="https://www.utan.edu.mx/campus/huasteca"
               docTitle='Degree'
-              docTitle2='Grades '
             />
           </div>
 

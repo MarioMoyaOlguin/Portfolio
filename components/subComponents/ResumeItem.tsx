@@ -64,23 +64,12 @@ const ResumeItem = (
                 <a className='w-40 h-40 sm:h-60 relative flex items-end shadow-md shadow-black/40' target='_blanck'
                 href='https://drive.google.com/file/d/1xWv5fTGL9mzDJQStM0psxl4JG_DucG2n/view?usp=sharing'>
                   <Image
-                    src='https://drive.google.com/uc?id=1S87aNdXQRFhuLwTBkVebGJTShkx3HfdM'
+                    src='/eTitulo-sm.png'
                     layout="fill"
                     objectFit='cover'
                     className=''
                   />
                   <p className={`w-full px-1 py-2 z-10 text-center ${docTextBg} `}>{docTitle}</p>
-                </a>
-
-                <a className='w-40 h-40 sm:h-60 relative flex items-end shadow-md shadow-black/40' target='_blanck'
-                href='https://drive.google.com/file/d/1eQV2Ku8YcB337bhhYAduXK7PGLptawTV/view?usp=sharing'>
-                  <Image
-                    src='https://drive.google.com/uc?id=1d6BltWWQ_4rax_6cQ5Y2wbBHIsOb7pZ0'
-                    layout="fill"
-                    objectFit='cover'
-                    className=''
-                  />
-                  <p className={`w-full px-1 py-2 z-10 text-center ${docTextBg} `}>{docTitle2}</p>
                 </a>
                 
                 
